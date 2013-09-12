@@ -23,13 +23,16 @@ A simple resource to serve twiml files for your twilio needs
     java -jar server/target/server-0.0.1-SNAPSHOT.jar server server/starter-java.yml
 
 6. Send a text message
-    Curl your test/send resource to send a text message.
-    This will send a text message to 4155556666 form one of your twilio phone number(s)
-    $> curl -X POST http://localhost:8060/test/send -d "To=4155556666" -d "Body=Ahoy Twilio"
+    - Curl your test/send resource to send a text message.
+    - This will send a text message to 4155556666 form one of your twilio phone number(s)
+    - $> curl -X POST http://localhost:8060/test/send -d "To=4155556666" -d "Body=Ahoy Twilio"
 
 7. To serve Twiml
-    install ngrok
-    ngrok 8060
+    - install ngrok (https://ngrok.com/)
+    - $> ngrok 8060
+    - ngrok will provide you with a public Url. eg https://3bbc88b5.ngrok.com
+    - Set this as the callback url for your SMS
+    - Send an SMS to your twilio number
 
 ## SmsResource
 ###Method:
