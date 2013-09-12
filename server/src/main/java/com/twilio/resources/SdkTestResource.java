@@ -86,8 +86,7 @@ public class SdkTestResource {
                 }
             }
         }
-
-        else if (null != sms)
+        if (null != sms)
             return Response.ok().entity(sms.getStatus()).build();
         else
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
