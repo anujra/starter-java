@@ -5,7 +5,7 @@ A simple resource to serve twiml files for your twilio needs
 ## Installation
 1. Download and install maven
 2. clone or download this repository
-    git clone git://code.corp.twilio.com/arjuna/starter-java.git
+    git clone https://github.com/anujra/starter-java.git
 3. Build
     cd starter-java
     mvn clean install
